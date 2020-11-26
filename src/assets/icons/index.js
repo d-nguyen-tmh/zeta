@@ -127,6 +127,7 @@ import {
   cilUserFemale,
   cilUserFollow,
   cilUserUnfollow,
+  cilImagePlus,
   cilX,
   cilXCircle,
   cilWarning
@@ -227,6 +228,7 @@ export const icons = Object.assign({}, {
   cilUserFemale,
   cilUserFollow,
   cilUserUnfollow,
+  cilImagePlus,
   cilX,
   cilXCircle,
   cilWarning

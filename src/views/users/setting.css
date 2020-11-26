@@ -1,0 +1,119 @@
+.setting-button {
+  width: 80px;
+}
+
+.setting-switch-button {
+  width: 80px;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.default-user-icon {
+  max-width: 20%;
+}
+
+.default-user-icon .c-icon {
+  color: white;
+}
+
+.custom-control-label svg{
+  border: 1px solid white;
+  border-radius: 24px;
+}
+
+.default1 .c-icon {
+  background-color: #ffd062;
+}
+
+.default2 .c-icon {
+  background-color: #2ed0b0;
+}
+
+.default3 .c-icon {
+  background-color: #ff6e58;
+}
+
+.default4 .c-icon {
+  background-color: #af91ea;
+}
+
+.default5 .c-icon {
+  background-color: #3fc0e7;
+}
+
+.user-setting {
+  margin-top: 10px;
+}
+.notification-on {
+  width: 70px;
+  color: #321fdb;
+}
+
+.notification-off {
+  width: 70px;
+}
+
+.switcher.c-switch-label .c-switch-input:checked ~ .c-switch-slider::before {
+  transform: translateX(50px);
+}
+
+.switcher.c-switch-label .c-switch-slider::after {
+  width: 70%;
+}
+.modal-submit-btn {
+  width: 90px;
+}
+.em-modal-footer {
+  display: block;
+}
+
+.sub-mail-memo {
+  margin-top: 10px;
+  color: #321fdb;
+}
+
+.choose-file-row {
+  margin-top: 20px;
+}
+
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.input-file + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.input-file:focus + label,
+.input-file + label:hover {
+  background-color: red;
+}
+
+.custom-user-icon {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  lineHeight: 50px;
+  backgroundColor : #FFCF55;
+}
+
+label.select-image {
+  margin-top: 7px;
+}
