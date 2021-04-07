@@ -15,8 +15,9 @@
   height: 30px;
 }
 
-.default-user-icon {
-  max-width: 20%;
+.form-user-icon {
+  margin-right: 25px !important;
+  margin-bottom: 15px;
 }
 
 .default-user-icon .c-icon {
@@ -110,10 +111,25 @@
   width: 50px;
   height: 50px;
   color: #fff;
-  lineHeight: 50px;
-  backgroundColor : #FFCF55;
+  background-color : #FFCF55;
 }
 
 label.select-image {
   margin-top: 7px;
+}
+
+.rounded-circle.text-center {
+  line-height: 48px !important;
+}
+
+.close {
+  color: #fff0;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-submit-btn {
+  width: 100px;
 }
