@@ -16,7 +16,7 @@ import CIcon from '@coreui/icons-react'
 // routes config
 import routes from '../routes'
 
-import { 
+import {
   TheHeaderDropdown,
   TheHeaderDropdownMssg,
   TheHeaderDropdownNotif,
@@ -57,7 +57,7 @@ const TheHeader = () => {
 
       <CHeaderNav className="d-md-down-none mr-auto">
         <CHeaderNavItem className="px-3" >
-          <CHeaderNavLink to="/dashboard">Dashboard</CHeaderNavLink>
+          <CHeaderNavLink to="/dashboard">Dashboard1</CHeaderNavLink>
         </CHeaderNavItem>
         <CHeaderNavItem  className="px-3">
           <CHeaderNavLink to="/users">Users</CHeaderNavLink>
@@ -96,9 +96,9 @@ const TheHeader = () => {
             <CLink className="c-subheader-nav-link"href="#">
               <CIcon name="cil-speech" alt="Settings" />
             </CLink>
-            <CLink 
-              className="c-subheader-nav-link" 
-              aria-current="page" 
+            <CLink
+              className="c-subheader-nav-link"
+              aria-current="page"
               to="/dashboard"
             >
               <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Dashboard
