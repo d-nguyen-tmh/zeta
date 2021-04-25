@@ -1,4 +1,5 @@
 import React from 'react';
+import { ProfileContainer } from './views/settings/Profile/ProfileContainer';
 
 const CodeEditors = React.lazy(() => import('./views/editors/code-editors/CodeEditors'));
 const TextEditors = React.lazy(() => import('./views/editors/text-editors/TextEditors'));
@@ -50,6 +51,8 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
+const Settings = React.lazy(() => import('./views/users/Settings'));
+const PostPreviewContainer = React.lazy(() => import('./views/post-preview/PostPreviewContainer'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -106,8 +109,10 @@ const routes = [
   { path: '/apps', name: 'Apps', component: Invoice, exact: true },
   { path: '/apps/invoicing', name: 'Invoice', component: Invoice, exact: true },
   { path: '/apps/invoicing/invoice', name: 'Invoice', component: Invoice },
-  { path: '/users', exact: true,  name: 'Users', component: Users },
-  { path: '/users/:id', exact: true, name: 'User Details', component: User }
+  { path: '/users', exact: true, name: 'Users', component: Users },
+  { path: '/users/:id', exact: true, name: 'User Details', component: User },
+  { path: '/settings', exact: true, name: 'Settings', component: ProfileContainer },
+  { path: '/post-preview', exact: true, name: 'Post Preview', component: PostPreviewContainer }
 ];
 
 export default routes;

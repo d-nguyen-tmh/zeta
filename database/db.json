@@ -1,0 +1,13 @@
+{
+  "users": {
+    "icon_id": 2,
+    "mail_address": "d-nguyen@tribalmedia.co.jp",
+    "mail_address_sub": "1@abc.com",
+    "password": "abcdef",
+    "is_sub_mail_daily_report_mail": "",
+    "is_sub_mail_alert_mail": "1",
+    "is_sub_mail_workflow_mail": "1",
+    "is_sub_mail_facebook_message_alert_mail": "",
+    "is_sub_mail_facebook_comment_alert_mail": "1"
+  }
+}
