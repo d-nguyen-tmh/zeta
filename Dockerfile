@@ -1,5 +1,8 @@
 FROM centos:6.6
 
+RUN sed -i -e "s/^mirrorlist=http:\/\/mirrorlist.centos.org/#mirrorlist=http:\/\/mirrorlist.centos.org/g" /etc/yum.repos.d/CentOS-Base.repo
+RUN sed -i -e "s/^#baseurl=http:\/\/mirror.centos.org/baseurl=https:\/\/vault.centos.org/g" /etc/yum.repos.d/CentOS-Base.repo
+
 # yum updates
 RUN rpm --rebuilddb && yum -y update &&  yum -y clean all
 
