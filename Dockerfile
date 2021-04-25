@@ -1,5 +1,5 @@
 FROM node:14
 
-RUN pwd && ls
+RUN mkdir -p /www/htdocs
 
-RUN yarn start
+VOLUME ["/workspace"]
