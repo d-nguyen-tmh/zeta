@@ -1,6 +1,9 @@
 steps:
   - name: node
     entrypoint: yarn
+    args: ["add", "node-sass"]
+  - name: node
+    entrypoint: yarn
     args: ["install"]
   - name: node
     entrypoint: yarn
