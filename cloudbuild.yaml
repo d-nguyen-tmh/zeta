@@ -1,5 +1,7 @@
 steps:
-- name: 'bash'
-  args: ['cd', '/home/nguyenvietduck55/github_d-nguyen-tmh_zeta']
-- name: 'bash'
-  args: ['git', 'pull']
+  - name: yarn
+    entrypoint: yarn
+    args: ["install"]
+  - name: run
+    entrypoint: yarn
+    args: ["start"]
