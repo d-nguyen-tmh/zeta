@@ -69,7 +69,7 @@
     "react-scripts": "^3.4.1"
   },
   "scripts": {
-    "start": "PORT=1234 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:cov": "npm test -- --coverage --watchAll=false",
