@@ -29,7 +29,7 @@ export const ProfileContainer = () => {
 
   return (
     <>
-      <h1>個人設定2</h1>
+      <h1>個人設定3</h1>
       <ProfileInformation info={profileData} />
       <ProfileMail />
       <ProfileSubmail info={profileData} />
