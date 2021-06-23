@@ -5,23 +5,33 @@ name: Deploy to GCP
 
 on:
   push:
-    branches: [dev]
+    branches: [ dev ]
   pull_request:
-    branches: [dev]
+    branches: [ dev ]
 
 jobs:
   build:
-    name: GAE Deploy
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [12.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
+
+      - name: Setup Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+        with:
+          service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+
+      - run: yarn
+      - run: yarn run build
+
+      - name: Deploy to App Engine
         uses: google-github-actions/deploy-appengine@main
         with:
-          credentials: ${{ secrets.gcp_credentials }}
+          deliverables: app.yaml
+          project_id: ${{ secrets.PROJECT_ID }}
+          credentials: ${{ secrets.SERVICE_ACCOUNT_KEY }}

@@ -1,2 +1,5 @@
 # app.yaml
 runtime: nodejs12
+
+# instance class (memory limit 2048MB)
+instance_class: F4_1G
