@@ -21,6 +21,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - run: yarn
+      - run: yarn run build
       - name: Use Node.js ${{ matrix.node-version }}
         uses: google-github-actions/deploy-appengine@main
         with:
